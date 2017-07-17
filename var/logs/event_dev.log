@@ -1,0 +1,4 @@
+[2017-07-17 06:35:14] eventlog.ERROR: busco todos [] []
+[2017-07-17 06:38:10] eventlog.INFO: busco ender {"name":"ender"} []
+[2017-07-17 06:39:24] eventlog.INFO: busco [object AppBundle\Entity\User] {"user":"[object] (AppBundle\\Entity\\User: {})"} []
+[2017-07-17 06:41:10] eventlog.NOTICE: busco [object AppBundle\Entity\User] {"user":"[object] (AppBundle\\Entity\\User: {})"} []
