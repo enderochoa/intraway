@@ -30,3 +30,10 @@ Testing
 Para testing utilizamos PHPUnit
 
 PHP Coding Standard Fixer PHP-CS-Fixer
+
+
+Pruebas
+
+para probar el codigo es necesario pararse en la raiz del directorio y ejecutar
+
+php vendor/bin/simple-phpunit src/AppBundle/Tests/Controller/UserRESTControllerTest.php 
