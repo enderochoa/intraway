@@ -8,10 +8,6 @@ class UserControllerTest extends WebTestCase
     public function testCompleteScenario()
     {
         $client = static::createClient();
-        
-        //get all
-        $request = $client->request('GET', '/api/users');
-        $this->assertEquals(200, $client->getResponse()->getStatusCode(), "Unexpected HTTP status code for GET /api/user/");
 
         //create new user
         $data = ['name'=>'mary','email'=>'mary@gmail.com','imageBase64'=>'data:image/png;base64,AAAFBfj42Pj4'];
@@ -21,6 +17,11 @@ class UserControllerTest extends WebTestCase
         $data = json_decode($client->getResponse()->getContent());
         //if has been created the user
         if (count($data)>0) {
+            //get all
+            $request = $client->request('GET', '/api/users');
+            $this->assertEquals(200, $client->getResponse()->getStatusCode(), "Unexpected HTTP status code for GET /api/user/");
+
+            
             //update user, change the name
             $data->name = 'mary something';
             $request = $client->request('PUT', '/api/users/'.$data->id, [], [], array('CONTENT_TYPE' => 'application/json'), json_encode($data));
