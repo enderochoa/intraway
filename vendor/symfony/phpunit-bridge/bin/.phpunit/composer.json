@@ -1,5 +1,0 @@
-{
-    "require": {
-        "symfony/phpunit-bridge": ">=3.2@dev"
-    }
-}
