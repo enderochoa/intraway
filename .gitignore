@@ -17,3 +17,5 @@
 
 /web/images/*
 !web/images/.gitkeep
+
+var/cache/test/*
