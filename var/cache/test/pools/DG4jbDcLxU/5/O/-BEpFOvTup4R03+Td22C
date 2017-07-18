@@ -1,3 +1,0 @@
-1531822992
-%255BAppBundle%255CController%255CUserRESTController%2540%255BAnnot%255D%255D%255B1%255D
-a:1:{i:0;O:51:"FOS\RestBundle\Controller\Annotations\RouteResource":2:{s:8:"resource";s:4:"User";s:9:"pluralize";b:1;}}
